@@ -1,0 +1,14 @@
+			.center {
+  margin: auto;
+  width: 60%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+  background: aqua;
+}
+body {
+/*  background: #ffffff url("3996599732062894467.jpg") no-repeat right top;*/
+/*  background: #ffffff url("3996599732062894467.jpg");*/
+}
+#bi{
+    background: #ffffff url("img.png")
+}
