@@ -59,7 +59,7 @@ $users = mysqli_fetch_all($result);
  <?php
 
 $display_email = !empty($email) ? $email : (isset($_COOKIE['cookie_email']) ? $_COOKIE['cookie_email'] : "");
-$checked = !empty($email) ? "checked" : (isset($_COOKIE['cookie_remember']) ? "checked" : "");
+$checked = !empty($rem) ? "checked" : (isset($_COOKIE['cookie_remember']) ? "checked" : "");
   ?>
 			<br>
 			<br>
