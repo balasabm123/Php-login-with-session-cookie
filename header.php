@@ -29,12 +29,12 @@ if(session_id()==""){
    		<li class="nav-item">
         <a class="nav-link" href="dashboard.php">Dashboard</a>
       </li> 
-       <li class="nav-item">
+       <li class="nav-item" style="margin-left: 220%;">
         <a class="nav-link" href="logout.php">Logout</a>
      
       </li style="align-content: right;">
-        <li class="nav-item">
-        <a class="nav-link">Welcome : <?=$_SESSION['name']?></a>
+        <li class="nav-item"  >
+        <a class="nav-link">Welcome  <?=$_SESSION['name']?></a>
       </li>
       <?php }else{  ?>
       <li class="nav-item">

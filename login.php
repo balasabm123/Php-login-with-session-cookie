@@ -12,11 +12,13 @@ $result = mysqli_query($con,$sql);
 $users = mysqli_fetch_all($result);
 
 
- if  (isset($_POST['submit'])){ 
+ if  (isset($_POST['submit']))
+ { 
+
  	$email = trim($_POST['email']);
  	$password = trim($_POST['password']);
- 	$rem = $_POST['remember']; 
-
+ 
+ 	$rem = $_POST['remember'];  
  	if(empty($email)){
  		$email_err = "Please enter Email";
  	}
@@ -51,7 +53,7 @@ $users = mysqli_fetch_all($result);
  		}
  		  
  	}
- }
+ } 
  ?> 
 
  <?php
@@ -74,7 +76,7 @@ $checked = !empty($email) ? "checked" : (isset($_COOKIE['cookie_remember']) ? "c
   </div>
   <div class="form-group">
     <label for="exampleInputPassword1">Password</label>
-    <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password"  autocomplete="off" autocorrect="off">
+    <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password"  autocomplete="off" autocorrect="off" require>
      <div class="text-danger"><?php echo $password_err; ?></div>
   </div>
   <div class="form-group form-check">
