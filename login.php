@@ -79,7 +79,7 @@ $checked = !empty($email) ? "checked" : (isset($_COOKIE['cookie_remember']) ? "c
   </div>
   <div class="form-group form-check">
   <input type="checkbox" name="remember" class="form-check-input" id="exampleCheck1" value="1" <?=$checked?>>
-    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    <label class="form-check-label" for="exampleCheck1">Remember me</label>
   </div>
   <button type="submit" name="submit" class="btn btn-primary">Submit</button>
 </form>
