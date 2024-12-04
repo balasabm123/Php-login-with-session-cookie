@@ -61,12 +61,9 @@ $users = mysqli_fetch_all($result);
 $display_email = !empty($email) ? $email : (isset($_COOKIE['cookie_email']) ? $_COOKIE['cookie_email'] : "");
 $checked = !empty($rem) ? "checked" : (isset($_COOKIE['cookie_remember']) ? "checked" : "");
   ?>
-			<br>
-			<br>
-			<br>
-			<br>
-			<div class="center">
-		<form action="" method="post">
+	<br> <br> <br><br> 
+	<div class="center">
+<form action="" method="post">
   <div class="form-group" >
     <label for="exampleInputEmail1">Email address</label>
     <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"  autocomplete="off" autocorrect="off" value="<?=$display_email ?>" >
